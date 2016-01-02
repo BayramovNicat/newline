@@ -2,8 +2,17 @@ $(document).ready(function() {
 
 	// Menu settings
 	$('.navbar-toggle').on('click', function(){
-		$(this).toggleClass('active');
-		$($(this).data('target')).fadeToggle('200').addClass('open').css("display","flex");
+		var btn = $(this);
+		if(!btn.hasClass('active')){
+			$('.navbar.navbar-inverse').addClass('collapsed')
+		}
+		$($(this).data('target')).fadeToggle('200',function(){
+			if(btn.hasClass('active')){
+				$('.navbar.navbar-inverse').removeClass('collapsed');
+			}
+			btn.toggleClass('active');
+		}).addClass('open').css("display","flex");
+		
 		$('main').toggleClass('blur');
 	});
  

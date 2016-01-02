@@ -438,3 +438,7 @@ main{
     position: relative;
     width: 100%;
 }
+
+.navbar.collapsed{
+	background: transparent;
+}

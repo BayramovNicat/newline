@@ -1594,33 +1594,6 @@
         "sourcemaps": false
       }
     },
-    "8bf529c9": {
-      "id": "8bf529c9",
-      "pid": "4c43cf00",
-      "name": "owl.carousel.js",
-      "input": "lib\\owl.carousel\\dist\\owl.carousel.js",
-      "customOutput": false,
-      "type": "Js",
-      "config": {
-        "autoCompile": false,
-        "uglify": true,
-        "mangle": true,
-        "sourcemaps": false
-      }
-    },
-    "36ea0011": {
-      "id": "36ea0011",
-      "pid": "4c43cf00",
-      "name": "README.md",
-      "input": "lib\\owl.carousel\\dist\\README.md",
-      "customOutput": false,
-      "type": "Md",
-      "config": {
-        "autoCompile": false,
-        "sanitize": false,
-        "gfm": true
-      }
-    },
     "0de8705d": {
       "id": "0de8705d",
       "pid": "4c43cf00",
@@ -2980,16 +2953,6 @@
       "initialSize": 205805,
       "status": "NOT_OPTIMIZED"
     },
-    "ce0ad513": {
-      "id": "ce0ad513",
-      "pid": "4c43cf00",
-      "path": "img\\rubberatkins-home.jpg",
-      "size": 102153,
-      "name": "rubberatkins-home.jpg",
-      "type": "Jpg",
-      "initialSize": 102153,
-      "status": "NOT_OPTIMIZED"
-    },
     "9a4f256a": {
       "id": "9a4f256a",
       "pid": "4c43cf00",
@@ -3008,16 +2971,6 @@
       "name": "slider2.jpg",
       "type": "Jpg",
       "initialSize": 504776,
-      "status": "NOT_OPTIMIZED"
-    },
-    "5255b4d0": {
-      "id": "5255b4d0",
-      "pid": "4c43cf00",
-      "path": "lib\\owl.carousel\\dist\\assets\\owl.video.play.png",
-      "size": 4976,
-      "name": "owl.video.play.png",
-      "type": "Png",
-      "initialSize": 4976,
       "status": "NOT_OPTIMIZED"
     },
     "41b50e82": {
@@ -3128,6 +3081,96 @@
       "name": "owl.video.play.png",
       "type": "Png",
       "initialSize": 4976,
+      "status": "NOT_OPTIMIZED"
+    },
+    "58584f1c": {
+      "id": "58584f1c",
+      "pid": "4c43cf00",
+      "path": "img\\corporate.png",
+      "size": 103275,
+      "name": "corporate.png",
+      "type": "Png",
+      "initialSize": 103275,
+      "status": "NOT_OPTIMIZED"
+    },
+    "4edaa52a": {
+      "id": "4edaa52a",
+      "pid": "4c43cf00",
+      "path": "img\\follow-us.png",
+      "size": 84470,
+      "name": "follow-us.png",
+      "type": "Png",
+      "initialSize": 84470,
+      "status": "NOT_OPTIMIZED"
+    },
+    "7e6cee3e": {
+      "id": "7e6cee3e",
+      "pid": "4c43cf00",
+      "path": "img\\logo-cola.png",
+      "size": 9508,
+      "name": "logo-cola.png",
+      "type": "Png",
+      "initialSize": 9508,
+      "status": "NOT_OPTIMIZED"
+    },
+    "25b24b5a": {
+      "id": "25b24b5a",
+      "pid": "4c43cf00",
+      "path": "img\\other-reclame-1.png",
+      "size": 107792,
+      "name": "other-reclame-1.png",
+      "type": "Png",
+      "initialSize": 107792,
+      "status": "NOT_OPTIMIZED"
+    },
+    "6f358ef0": {
+      "id": "6f358ef0",
+      "pid": "4c43cf00",
+      "path": "img\\other-reclame-2.png",
+      "size": 110536,
+      "name": "other-reclame-2.png",
+      "type": "Png",
+      "initialSize": 110536,
+      "status": "NOT_OPTIMIZED"
+    },
+    "64ae7f64": {
+      "id": "64ae7f64",
+      "pid": "4c43cf00",
+      "path": "img\\other-reclame-3.png",
+      "size": 84165,
+      "name": "other-reclame-3.png",
+      "type": "Png",
+      "initialSize": 84165,
+      "status": "NOT_OPTIMIZED"
+    },
+    "0a7a1353": {
+      "id": "0a7a1353",
+      "pid": "4c43cf00",
+      "path": "img\\other-reclame-4.png",
+      "size": 104483,
+      "name": "other-reclame-4.png",
+      "type": "Png",
+      "initialSize": 104483,
+      "status": "NOT_OPTIMIZED"
+    },
+    "ba8fe5a9": {
+      "id": "ba8fe5a9",
+      "pid": "4c43cf00",
+      "path": "img\\shadow-top-on-image.png",
+      "size": 2481,
+      "name": "shadow-top-on-image.png",
+      "type": "Png",
+      "initialSize": 2481,
+      "status": "NOT_OPTIMIZED"
+    },
+    "e803aed3": {
+      "id": "e803aed3",
+      "pid": "4c43cf00",
+      "path": "img\\slider3.jpg",
+      "size": 408628,
+      "name": "slider3.jpg",
+      "type": "Jpg",
+      "initialSize": 408628,
       "status": "NOT_OPTIMIZED"
     }
   },
