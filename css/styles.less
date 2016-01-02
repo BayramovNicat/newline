@@ -12,6 +12,10 @@
 
 @menu-line-height: 3px;
 
+@main-card-color-1: #195981;
+@main-card-color-2: #3d5a98;
+@main-card-color-3: #4a4a4a;
+
 
 .navbar-inverse .navbar-nav>li>a{color: @menu-font-color}
 
@@ -31,3 +35,7 @@ footer:after,
 .navbar-inverse .navbar-nav>li>a:before{
 	height: @menu-line-height;
 }
+
+.card-title-fill.ligtblue:before{ background: @main-card-color-1; }
+.card-title-fill.blue:before{ background: @main-card-color-2; }
+.card-title-fill.gray:before{ background: @main-card-color-3; }

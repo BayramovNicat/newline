@@ -12,6 +12,7 @@
     <link href="lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<link href="css/media.css" rel="stylesheet">
     <script src="lib/less/dist/less.min.js"></script>
@@ -21,10 +22,11 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top transparent">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top transparent collapsed">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-target="#navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,7 +36,7 @@
           	<img src="img/logo.png" alt="">
           </a>
         </div>
-		<div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+		<div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#">Haqqımızda</a></li>
             <li><a href="#about">Xəbərlər</a></li>
@@ -59,88 +61,95 @@
         </div>
       </div>
     </nav>
+	<main>
+	    <header class="carousel slide">
+	        
+			<div id="header-carousel" class="owl-carousel">
+				<div class="fill" style="background-image: url('img/slider1.jpg')"></div>
+				<div class="fill" style="background-image: url('img/slider2.jpg')"></div>
+				<div class="fill" style="background-image: url('img/slider3.jpg')"></div>
+			</div>
 
-    <header class="carousel slide">
-        
-		<div id="header-carousel" class="owl-carousel">
-			<div class="fill" style="background-image: url('img/slider1.jpg')"></div>
-			<div class="fill" style="background-image: url('img/slider2.jpg')"></div>
-			<div class="fill" style="background-image: url('img/slider3.jpg')"></div>
-		</div>
+		</header>
+		
+		<section id="main-cards">
+		    <div class="container">
+		      <!-- Example row of columns -->
+		      <div class="row">
+		        <div class="col-md-4">
+					<div class="main-card">
+						<h2 class="card-title card-title-fill ligtblue"><i>Haqqımızda</i><img src="img/corporate.png" alt=""></h2>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla sollicitudin nunc vitae dapibus. Integer molestie risus et elit venenatis sollicitudin. Curabitur at mollis arcu, ac tincidunt nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere sit amet ligula eget aliquet. Donec hendrerit risus in pulvinar laoreet. Ut vestibulum urna ut lobortis porttitor. Curabitur condimentum augue sed eros ultricies, nec dignissim magna aliquam.<br/><br/>
 
-	</header>
-	
-	<section id="main-cards">
-	    <div class="container">
-	      <!-- Example row of columns -->
-	      <div class="row">
-	        <div class="col-md-4">
-				<div class="main-card">
-					<h2 class="card-title">Haqqımızda</h2>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla sollicitudin nunc vitae dapibus. Integer molestie risus et elit venenatis sollicitudin. Curabitur at mollis arcu, ac tincidunt nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere sit amet ligula eget aliquet. Donec hendrerit risus in pulvinar laoreet. Ut vestibulum urna ut lobortis porttitor. Curabitur condimentum augue sed eros ultricies, nec dignissim magna aliquam.<br/><br/>
+						Quisque condimentum quam nec enim mollis, et placerat sapien maximus. Nam enim quam, cursus vitae pellentesque eget, aliquet a dui. Vivamus cursus luctus viverra.</p>
+						<a class="card-footer" href="#" role="button">Daha ətraflı</a>
+					</div>
+		        </div>
+		        <div class="col-md-4">
+					<div class="main-card">
+						<h2 class="card-title card-title-fill blue"><i>Bizi fb-da izləyin</i><img src="img/follow-us.png" alt=""></h2>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla sollicitudin nunc vitae dapibus. Integer molestie risus et elit venenatis sollicitudin. Curabitur at mollis arcu, ac tincidunt nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere sit amet ligula eget aliquet. Donec hendrerit risus in pulvinar laoreet. Ut vestibulum urna ut lobortis porttitor. Curabitur condimentum augue sed eros ultricies, nec dignissim magna aliquam.<br/><br/>
 
-					Quisque condimentum quam nec enim mollis, et placerat sapien maximus. Nam enim quam, cursus vitae pellentesque eget, aliquet a dui. Vivamus cursus luctus viverra.</p>
-					<a class="card-footer" href="#" role="button">Daha ətraflı</a>
-				</div>
-	        </div>
-	        <div class="col-md-4">
-				<div class="main-card">
-					<h2 class="card-title facebook-bgc">Bizi fb-da izləyin</h2>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla sollicitudin nunc vitae dapibus. Integer molestie risus et elit venenatis sollicitudin. Curabitur at mollis arcu, ac tincidunt nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere sit amet ligula eget aliquet. Donec hendrerit risus in pulvinar laoreet. Ut vestibulum urna ut lobortis porttitor. Curabitur condimentum augue sed eros ultricies, nec dignissim magna aliquam.<br/><br/>
+						Quisque condimentum quam nec enim mollis, et placerat sapien maximus. Nam enim quam, cursus vitae pellentesque eget, aliquet a dui. Vivamus cursus luctus viverra.</p>
+						<a class="card-footer facebook-bgc" href="#" role="button">Facebook səhifəmizə keçin</a>
+					</div>
+		        </div>
+		        <div class="col-md-4">
+					<div class="main-card">
+						<h2 class="card-title card-button card-title-fill gray"><i>Universitetdə reklam</i><img src="img/other-reclame-1.png" alt=""></h2>
+						<h2 class="card-title card-button card-title-fill gray bradius-none"><i>Supermarketdə reklam</i><img src="img/other-reclame-2.png" alt=""></h2>
+						<h2 class="card-title card-button card-title-fill gray bradius-none"><i>Tədbirlərin təşkili</i><img src="img/other-reclame-3.png" alt=""></h2>
+						<h2 class="card-title card-button card-title-fill gray bradius-none"><i>Digər reklam</i><img src="img/other-reclame-4.png" alt=""></h2>
+						<a class="card-footer red-bgc" href="#" role="button">Bütün xidmətlər</a>
+					</div>
+		        </div>
+		      </div>
+		    </div>
+	    </section>
 
-					Quisque condimentum quam nec enim mollis, et placerat sapien maximus. Nam enim quam, cursus vitae pellentesque eget, aliquet a dui. Vivamus cursus luctus viverra.</p>
-					<a class="card-footer facebook-bgc" href="#" role="button">Facebook səhifəmizə keçin</a>
-				</div>
-	        </div>
-	        <div class="col-md-4">
-				<div class="main-card">
-					<h2 class="card-title">Universitetdə reklam</h2>
-					<h2 class="card-title bradius-none">Supermarketdə reklam</h2>
-					<h2 class="card-title bradius-none">Tədbirlərin təşkili</h2>
-					<h2 class="card-title bradius-none">Digər reklam</h2>
-					<a class="card-footer red-bgc" href="#" role="button">Bütün xidmətlər</a>
-				</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
+		<section id="sponsor">
+			<div id="sponsor-carousel" class="owl-carousel">
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+				<div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+			</div>
+		</section>
 
-	<section id="sponsor">
-		<div id="sponsor-carousel" class="owl-carousel">
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-			<div class="sponsor-item"></div>
-		</div>
-	</section>
+		<section id="map">
+			<img  class="img-responsive" src="img/map.jpg" alt="">
+		</section>
 
-	<section id="map">
-		<img  class="img-responsive" src="img/map.jpg" alt="">
-	</section>
-
-	<footer>
-		<div class="container">
-			<p>Bütün hüquqlar qorunub. © 2015, New line MMC</p>
-		</div>
-	</footer>
-
+		<footer>
+			<div class="container">
+				<p>Bütün hüquqlar qorunub. © 2015, New line MMC</p>
+			</div>
+		</footer>
+	</main>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>

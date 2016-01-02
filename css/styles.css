@@ -1,0 +1,45 @@
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-inverse:before,
+footer:after {
+  background-color: #4a4a4a;
+}
+.navbar-inverse .navbar-nav > li:nth-child(1) > a:before {
+  background-color: #195981;
+}
+.navbar-inverse .navbar-nav > li:nth-child(2) > a:before {
+  background-color: #d3a65d;
+}
+.navbar-inverse .navbar-nav > li:nth-child(3) > a:before {
+  background-color: #be1e2d;
+}
+.navbar-inverse .navbar-nav > li:nth-child(4) > a:before {
+  background-color: #00c89b;
+}
+.navbar-inverse .navbar-nav > li:nth-child(5) > a:before {
+  background-color: #d74ed0;
+}
+.navbar-inverse .navbar-nav > li:nth-child(6) > a:before {
+  background-color: #37b4ff;
+}
+.navbar-inverse .navbar-nav > li:nth-child(7) > a:before {
+  background-color: #78ee00;
+}
+.navbar-inverse .navbar-nav > li:nth-child(8) > a:before {
+  background-color: #373eff;
+}
+.navbar-inverse:before,
+footer:after,
+.navbar-inverse .navbar-nav > li > a:before {
+  height: 3px;
+}
+.card-title-fill.ligtblue:before {
+  background: #195981;
+}
+.card-title-fill.blue:before {
+  background: #3d5a98;
+}
+.card-title-fill.gray:before {
+  background: #4a4a4a;
+}

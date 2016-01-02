@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+	// Menu settings
+	$('.navbar-toggle').on('click', function(){
+		$(this).toggleClass('active');
+		$($(this).data('target')).fadeToggle('200').addClass('open').css("display","flex");
+		$('main').toggleClass('blur');
+	});
  
 	$('#header-carousel').owlCarousel({
 		items: 1,
@@ -16,7 +23,8 @@ $(document).ready(function() {
 
 	$('#sponsor-carousel').owlCarousel({
 		items: 10,
-		nav: true,
+		nav: false,
+		dots: false,
 	    loop:true,
 	    slideBy: 10,
 	    autoplay:true,
