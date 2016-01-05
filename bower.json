@@ -1,0 +1,15 @@
+{
+  "name": "newline",
+  "version": "0.0.1",
+  "dependencies": {
+    "modernizr": "",
+    "bootstrap": "",
+    "font-awesome" : "",
+    "owl.carousel" : "2.0.0-beta.3",
+    "html5shiv" : "",
+    "respond" : ""
+  },
+  "authors": [
+    "Bayramov Nicat"
+  ]
+}

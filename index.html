@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Newline</title>
+
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+  	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  	<link href="css/style.min.css" rel="stylesheet">
+    <link href="css/media.min.css" rel="stylesheet">
+    <link href="css/class.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="lib/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top transparent animated">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle pull-left" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="nl-icon-menu"></i>
+          </button>
+
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+          <button type="button" class="navbar-toggle" data-target="#lang" aria-expanded="false">
+            <span class="sr-only">Toggle language</span>
+            <i class="nl-icon-language"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav valign">
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="#">Xəbərlər</a></li>
+            <li><a href="#">Xidmətlər</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Partnyorlar</a></li>
+            <li><a href="#">Vakansiyalar</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+          <ul class="nav navbar-nav hidden-sm hidden-xs navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="nl-icon-language"></i>
+                <span class="hidden-md">Dil seçimi</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Azərbaycan</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+        <div class="collapse navbar-collapse" id="lang">
+          <ul class="nav navbar-nav valign">
+            <li><a href="#">Azərbaycan</a></li>
+            <li><a href="#">Русский</a></li>
+            <li><a href="#">English</a></li>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <main>
+
+      <header class="carousel">  
+        <div id="header-carousel" class="owl-carousel hidden-xs hidden-sm">
+          <div class="fill" style="background-image: url('img/slider1.jpg')"></div>
+          <div class="fill" style="background-image: url('img/slider2.jpg')"></div>
+          <div class="fill" style="background-image: url('img/slider3.jpg')"></div>
+        </div>
+        <div id="header-carousel-mob" class="owl-carousel hidden-md hidden-lg">
+          <div class="fill" style="background-image: url('img/other-reclame-1.png')"><span>Universitetdə reklam</span></div>
+          <div class="fill" style="background-image: url('img/other-reclame-2.png')"><span>Supermarketdə reklam</span></div>
+          <div class="fill" style="background-image: url('img/other-reclame-3.png')"><span>Tədbirlərin təşkili</span></div>
+          <div class="fill" style="background-image: url('img/other-reclame-4.png')"><span>Digər reklam</span></div>
+        </div>
+      </header>
+
+      <section id="main-cards">
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+          <div class="main-card">
+            <h2 class="card-title card-title-fill ligtblue"><span>Haqqımızda</span><img class="animated" src="img/corporate.png" alt=""></h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla sollicitudin nunc vitae dapibus. Integer molestie risus et elit venenatis sollicitudin. Curabitur at mollis arcu, ac tincidunt nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere sit amet ligula eget aliquet. Donec hendrerit risus in pulvinar laoreet. Ut vestibulum urna ut lobortis porttitor. Curabitur condimentum augue sed eros ultricies, nec dignissim magna aliquam.<br/><br/>
+
+            Quisque condimentum quam nec enim mollis, et placerat sapien maximus. Nam enim quam, cursus vitae pellentesque eget, aliquet a dui. Vivamus cursus luctus viverra.</p>
+            <a class="card-footer hidden-xs hidden-sm" href="#" role="button">Daha ətraflı</a>
+          </div>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+          <div class="main-card">
+            <h2 class="card-title card-title-fill blue"><span>Bizi fb-da izləyin</span><img src="img/follow-us.png" alt=""></h2>
+            <div class="card-text">
+              <div class='fb-page'
+                data-href='https://www.facebook.com/newlinesportdk/'
+                data-width='500'
+                data-height='320'
+                data-hide-cover='false'
+                data-show-facepile='false'
+                data-show-posts='true'>
+                <div class='fb-xfbml-parse-ignore'>
+                  <blockquote cite='https://www.facebook.com/newlinesportdk/'>
+                    <a href='https://www.facebook.com/newlinesportdk/'>Facebook</a>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <a class="card-footer facebook-bgc" href="#" role="button">Facebook səhifəmizə keçin</a>
+          </div>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+          <div class="main-card">
+            <h2 class="card-title card-button card-title-fill gray"><span>Universitetdə reklam</span><img src="img/other-reclame-1.png" alt=""></h2>
+            <h2 class="card-title card-button card-title-fill gray bradius-none"><span>Supermarketdə reklam</span><img src="img/other-reclame-2.png" alt=""></h2>
+            <h2 class="card-title card-button card-title-fill gray bradius-none"><span>Tədbirlərin təşkili</span><img src="img/other-reclame-3.png" alt=""></h2>
+            <h2 class="card-title card-button card-title-fill gray bradius-none"><span>Digər reklam</span><img src="img/other-reclame-4.png" alt=""></h2>
+            <a class="card-footer red-bgc" href="#" role="button">Bütün xidmətlər</a>
+          </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsor">
+        <h2 class="card-title card-title-fill ligtblue hidden-lg hidden-md"><span>Partnyorlar</span><img src="img/partners.png" alt=""></h2>
+        <div id="sponsor-carousel" class="owl-carousel hidden-xs hidden-sm">
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+          <div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div>
+        </div>
+        <div id="sponsor-carousel-mob" class="hidden-md hidden-lg">
+          <div class="row">
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+            <div class="col-sm-4 col-xs-4"><div class="sponsor-item" style="background-image: url('img/logo-cola.png')"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map">
+        <h2 class="card-title card-title-fill red hidden-lg hidden-md"><span>Bizim monitorlar</span><img src="img/monitors.png" alt=""></h2>
+        <img  class="img-responsive" src="img/map.jpg" alt="">
+      </section>
+
+      <footer>
+        <div class="container">
+          <p>Bütün hüquqlar qorunub. © 2015, New line MMC</p>
+          <ul class="social_buttons">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </main>
+    
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/common.min.js"></script> 
+  </body>
+</html>
