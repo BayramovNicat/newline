@@ -1,12 +1,11 @@
 $menu_line = #4a4a4a;
-$menu_line_1 = #195981;
-$menu_line_2 = #d3a65d;
-$menu_line_3 = #be1e2d;
-$menu_line_4 = #00c89b;
-$menu_line_5 = #d74ed0;
-$menu_line_6 = #37b4ff;
-$menu_line_7 = #78ee00;
-$menu_line_8 = #373eff;
+$menu_line_1 = background-linear-gradient(top, #3692b7,0%, #195981,100%);
+$menu_line_2 = background-linear-gradient(top, #ebd296,0%, #d3a65d,100%);
+$menu_line_3 = background-linear-gradient(top, #e04059,0%, #be1e2d,100%);
+$menu_line_4 = background-linear-gradient(top, #00e6cb,0%, #00c89b,100%);
+$menu_line_5 = background-linear-gradient(top, #68dbff,0%, #37b4ff,100%);
+$menu_line_6 = background-linear-gradient(top, #d74ed0,0%, #AB1FA4,100%);
+$menu_line_7 = background-linear-gradient(top, #6871ff,0%, #373eff,100%);
 
 $menu_line_height = 3px;
 
@@ -52,18 +51,28 @@ background-linear-gradient(startPoint, startColor, startInterval, endColor, endI
 	
 .navbar-inverse:before{ background-color: $menu_line }
 
-.navbar-inverse .navbar-nav>li:nth-child(1)>a:before{ background-color: $menu_line_1 }
-.navbar-inverse .navbar-nav>li:nth-child(2)>a:before{ background-color: $menu_line_2 }
-.navbar-inverse .navbar-nav>li:nth-child(3)>a:before{ background-color: $menu_line_3 }
-.navbar-inverse .navbar-nav>li:nth-child(4)>a:before{ background-color: $menu_line_4 }
-.navbar-inverse .navbar-nav>li:nth-child(5)>a:before{ background-color: $menu_line_5 }
-.navbar-inverse .navbar-nav>li:nth-child(6)>a:before{ background-color: $menu_line_6 }
-.navbar-inverse .navbar-nav>li:nth-child(7)>a:before{ background-color: $menu_line_7 }
-.navbar-inverse .navbar-nav>li:nth-child(8)>a:before{ background-color: $menu_line_8 }
+.navbar-inverse .navbar-nav:not(.navbar-right)>li:nth-child(1)>a:before
+	$menu_line_1
+.navbar-inverse .navbar-nav>li:nth-child(2)>a:before
+	$menu_line_2
+.navbar-inverse .navbar-nav>li:nth-child(3)>a:before
+	$menu_line_3
+.navbar-inverse .navbar-nav>li:nth-child(4)>a:before
+	$menu_line_4
+.navbar-inverse .navbar-nav>li:nth-child(5)>a:before
+	$menu_line_5
+.navbar-inverse .navbar-nav>li:nth-child(6)>a:before
+	$menu_line_6
+.navbar-inverse .navbar-nav>li:nth-child(7)>a:before
+	$menu_line_7
 .navbar-inverse .navbar-right>li:nth-child(1)>a:before{ background-color: $menu_line }
 
 .navbar-inverse.collapsed .navbar-nav>li>a:before{
 	height: 1px
+}
+
+.navbar-right{
+	margin-right: 0 !important;
 }
 
 .navbar-inverse:before,
@@ -443,7 +452,7 @@ main
 			position: absolute;
 			bottom: 0;
 			z-index: 1;
-			background: #377093;
+			background-linear-gradient(top, #3692b7,0%, #195981,100%)
 			display: inline-block;
 			width: 100%;
 			padding: 15px 0;
@@ -457,6 +466,10 @@ main
 			-moz-border-radius-bottomleft: 3px;
 			border-bottom-right-radius: 3px;
 			border-bottom-left-radius: 3px;
+			&.facebook-bgc
+				background-linear-gradient(top, #7093c9,0%, #3d5a98,100%)
+			&.red-bgc
+				background-linear-gradient(top, #e04059,0%, #be1e2d,100%)
 
 #content
 	position: relative;
@@ -523,9 +536,8 @@ main
 			color: #195981
 
 	.panel-body
-		padding: 20px 0
 		font-size: 18px
-		margin-bottom 80px
+		margin-bottom 20px
 		color: #4a4a4a
 		
 		img
@@ -546,11 +558,12 @@ main
 	font-weight 700
 	border none
 .news-section
-	margin-bottom 150px
+	margin-bottom 100px
 #news
 	background-color: transparent
-	margin-bottom: 60px
-
+	margin-bottom: 30px
+#contact-map
+	margin-bottom: 80px
 .news-box
 	background-color: #fff
 	border-radius: 3px
@@ -762,7 +775,7 @@ footer
 .btn-success:active.focus, 
 .btn-success.active.focus, 
 .open>.dropdown-toggle.btn-success.focus
-	background-linear-gradient(top, #b0f800,0%, #78ee00,100%)
+	background-linear-gradient(top, #d74ed0,0%, #ab1fa4,100%)
 	border none
 
 .form-control
@@ -835,3 +848,40 @@ footer
 		
 #galery-view
 	margin 0 -30px 1px
+	
+.dropdown-menu
+	min-width 122px
+	border none
+	box-shadow none
+	background-color #4a4a4a
+	>li>a
+		color #fff
+
+.panel-body
+	padding: 15px 0
+
+.file-upload-wrapper
+	position relative
+	.file-upload-input
+		background-color #fff
+		border 1px solid #9b9b9b
+		width 100%
+		height 50px
+		line-height 50px
+		font-family 'Lato-Semibold'
+		font-size 16px
+		color #555
+		box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
+		padding 6px 12px
+	.file-upload-button
+		background-linear-gradient(top, #d74ed0,0%, #ab1fa4,100%)
+		width 90px
+		height 33px
+		line-height 33px
+		border-radius 3px
+		border none
+		color #fff
+		font-size 12px
+		position absolute
+		right 8px
+		top calc(50% - 16px)
