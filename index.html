@@ -198,8 +198,14 @@
       </section>
 
       <section id="map">
-        <h2 class="card-title card-title-fill red hidden-lg hidden-md"><span>Bizim monitorlar</span><img src="img/monitors.png" alt=""></h2>
-        <img  class="img-responsive" src="img/map.jpg" alt="">
+        <h2 class="card-title card-title-fill hidden-lg hidden-md"><span>Bizim monitorlar</span><img src="img/monitors.png" alt=""></h2>
+        <h3 class="map-title">BİZİM MONİTORLAR BURADA</h3>
+        <ul class="map-filter">
+          <li class="active" data-value=""><i class="nl-icon-menu"></i>hamısına bax</li>
+          <li data-value="shop"><i class="nl-icon-shop"></i>yalnız marketlər</li>
+          <li data-value="school"><i class="nl-icon-school"></i>yalnız təhsil müəssisələri</li>
+        </ul>
+        <div id="map-canvas"></div>
       </section>
 
       <footer>
@@ -218,6 +224,11 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="js/common.min.js"></script> 
+    <script>
+      // Init map
+      initialize();
+    </script>
   </body>
 </html>

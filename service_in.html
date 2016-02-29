@@ -9,6 +9,7 @@
 
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/thumbnail-scroller/jquery.mThumbnailScroller.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
   	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -89,30 +90,44 @@
               <h1 class="panel-title red">Xidmətlər</h1>
             </div>
             <div class="panel-body">
-              <ul class="services_list">
-                <li>
-                  <a href=""><img src="img/bitmap.png" alt=""><span>MARKETDƏ <br/>REKLAM</span></a>
-                  <ul>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>MONİTOR</span></a></li>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>LAYTBOKS</span></a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href=""><img src="img/bitmap.png" alt=""><span>UNİVERSİTETDƏ <br/>REKLAM</span></a>
-                  <ul>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>MONİTOR</span></a></li>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>LAYTBOKS</span></a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href=""><img src="img/bitmap.png" alt=""><span>DİGƏR <br/>REKLAM</span></a>
-                  <ul>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>MONİTOR</span></a></li>
-                    <li><a href="service_in.html"><img src="img/bitmap.png" alt=""><span>LAYTBOKS</span></a></li>
-                  </ul>
-                </li>
+              <ul class="services_in_list">
+                <li><a href="#"><img src="img/bitmap.png" alt=""><span>MONİTOR</span></a></li>
+                <li class="active"><a href="#"><img src="img/bitmap.png" alt=""><span>LAYTBOKS</span></a></li>
               </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore optio ab nostrum illum, sint ipsam sed eum ea non consectetur, similique architecto pariatur error itaque sunt in repellat quam voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequuntur modi laudantium. Illo accusamus at pariatur a obcaecati placeat earum quidem, rerum. Dolorum laborum perferendis tempora debitis. Cupiditate, debitis, dolorem!</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore optio ab nostrum illum, sint ipsam sed eum ea non consectetur, similique architecto pariatur error itaque sunt in repellat quam voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequuntur modi laudantium. Illo accusamus at pariatur a obcaecati placeat earum quidem, rerum. Dolorum laborum perferendis tempora debitis. Cupiditate, debitis, dolorem!</p>
+                </div>
+                <div class="col-md-6">
+                  <div id="galery-view">
+                    <img class="img-responsive" src="img/test.jpg" alt="">
+                  </div>
+                  <div id="galery-scroller" class="content mThumbnailScroller" data-mts-theme="hover-full">
+                    <ul>
+                      <li><a href="#"><img src="img/thumbnails/img1.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img2.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img3.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img4.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img5.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img6.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img7.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img8.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img9.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img10.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img11.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img12.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img13.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img14.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img15.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img16.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img17.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img18.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img19.jpg" /></a></li>
+                      <li><a href="#"><img src="img/thumbnails/img20.jpg" /></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,6 +201,7 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="lib/thumbnail-scroller/jquery.mThumbnailScroller.js"></script>
     <script src="js/common.min.js"></script> 
   </body>
 </html>

@@ -203,3 +203,140 @@ $(document).scroll(function() {
 }(jQuery));
 
 $('input[type=file]').customFile();
+
+$('.services_list > li > a').on('click',function(e){
+	e.preventDefault();
+	$(this).parent().toggleClass('active');
+	$('.white-overlay').toggle();
+});
+
+
+
+
+
+
+
+var gmarkers1 = [];
+var markers1 = [];
+var infowindow = new google.maps.InfoWindow({
+    content: ''
+});
+
+// Our markers
+markers1 = [
+    ['0', 'Title', 40.3881854,49.838135, 'shop','logo-cola.png'],
+    ['1', 'Title', 40.3881935,49.8418472, 'school','logo-cola.png'],
+    ['2', 'Title', 40.3840258,49.8500762, 'shop','logo-cola.png'],
+    ['3', 'Title', 40.3830369,49.8451624, 'second','logo-cola.png']
+];
+// Our markers
+markers2 = [
+    ['0', 'Title', 40.384794,49.8409782, 'shop','logo-cola.png']
+];
+
+/**
+ * Function to init map
+ */
+
+function initialize() {
+    var center = new google.maps.LatLng(40.384794,49.8409782);
+    var mapOptions = {
+        zoom: 15,
+        center: center,
+        scrollwheel: false,
+        draggable: true,
+        minZoom: 9,
+        streetViewControl:false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    for (i = 0; i < markers1.length; i++) {
+        addMarker(markers1[i]);
+    }
+}
+
+/**
+ * Function to add marker to map
+ */
+
+function addMarker(marker) {
+    var category = marker[4];
+    var title = marker[1];
+    var pos = new google.maps.LatLng(marker[2], marker[3]);
+    var content = marker[1];
+    var icon = marker[5];
+
+    marker1 = new google.maps.Marker({
+        title: title,
+        position: pos,
+        category: category,
+        map: map,
+        icon: {
+			url: './img/'+icon, 
+			size: new google.maps.Size(96, 81),
+			origin: new google.maps.Point(0,0),
+			anchor: new google.maps.Point(48,81 )
+        }
+    });
+
+    gmarkers1.push(marker1);
+
+    // Marker click listener
+    google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
+        return function () {
+            console.log('Gmarker 1 gets pushed');
+            infowindow.setContent(content);
+            infowindow.open(map, marker1);
+            map.panTo(this.getPosition());
+            map.setZoom(15);
+        }
+    })(marker1, content));
+}
+
+/**
+ * Function to filter markers by category
+ */
+
+filterMarkers = function (category) {
+    for (i = 0; i < markers1.length; i++) {
+        marker = gmarkers1[i];
+        // If is same category or category not picked
+        if (marker.category == category || category.length === 0) {
+            marker.setVisible(true);
+        }
+        // Categories don't match 
+        else {
+            marker.setVisible(false);
+        }
+    }
+}
+
+$('.map-filter li').on('click', function(){
+	$('.map-filter li').removeClass('active');
+	filterMarkers($(this).data('value'));
+	$(this).addClass('active');
+});
+
+
+
+function initialize_contact() {
+    var center = new google.maps.LatLng(40.384794,49.8409782);
+    var mapOptions = {
+        zoom: 15,
+        center: center,
+        scrollwheel: false,
+        draggable: true,
+        minZoom: 9,
+        streetViewControl:false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    map = new google.maps.Map(document.getElementById('map-contact'), mapOptions);
+    for (i = 0; i < markers2.length; i++) {
+        addMarker(markers2[i]);
+    }
+}
+

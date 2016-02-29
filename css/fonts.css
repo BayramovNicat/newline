@@ -54,6 +54,19 @@
 
 }
 
+[data-icon]:before {
+  font-family: "newline-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 [class^="nl-icon-"]:before,
 [class*=" nl-icon-"]:before {
   font-family: "newline-icons" !important;
@@ -65,6 +78,10 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.nl-icon-close:before {
+  content: "\61";
 }
 .nl-icon-unselected-c:before {
   content: "\62";
@@ -93,7 +110,18 @@
 .nl-icon-language:before {
   content: "\6a";
 }
-
-.nl-icon-close:before {
-  content: "\61";
+.nl-icon-play:before {
+  content: "\6b";
+}
+.nl-icon-phone:before {
+  content: "\6c";
+}
+.nl-icon-pause:before {
+  content: "\6d";
+}
+.nl-icon-map:before {
+  content: "\6e";
+}
+.nl-icon-mail:before {
+  content: "\6f";
 }

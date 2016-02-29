@@ -89,22 +89,23 @@
               <h1 class="panel-title dark-blue">Əlaqə</h1>
             </div>
             <div class="panel-body">
+              <div class="row">
               <div class="col-md-6 col-sm-6 text-center">
                 <ul class="contact-text">
                   <li>
-                    <i class="nl-icon-school"></i>
+                    <i class="nl-icon-map"></i>
                     Bakı şəhəri, Azərbaycan<br/>
                     Yusif Vəzir Çəmənzəminli küçəsi 1021, AZ1008<br/>
                     Afen Plaza, 2-ci mərtəbə
                   </li>
                   <li>
-                    <i class="nl-icon-school"></i>
+                    <i class="nl-icon-mail"></i>
                     Satış şöbəsi: <a href="mailto:sales@newline.az">sales@newline.az</a><br/>
                     Əlaqə: <a href="mailto:info@newline.az">info@newline.az</a><br/>
                     Rəhbərlik: <a href="mailto:director@newline.az">director@newline.az</a>
                   </li>
                   <li>
-                    <i class="nl-icon-school"></i>
+                    <i class="nl-icon-phone"></i>
                     Satış şöbəsi: <a href="call:+994125431287">+994125431287</a><br/>
                     Əlaqə (daxili 114): <a href="call:+994502345678">+994502345678</a><br/>
                     Rəhbərlik: <a href="call:+994559876543">+994559876543</a>
@@ -124,6 +125,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary">GÖNDƏR</button> </form>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +134,7 @@
       <section id="contact-map">
         <div class="container">
           <div class="panel panel-default">
-            <img  class="img-responsive" src="img/map.jpg" alt="">
+            <div id="map-contact"></div>
           </div>
         </div>
       </section>
@@ -153,6 +155,10 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="js/common.min.js"></script> 
+    <script>
+      initialize_contact();
+    </script>
   </body>
 </html>
