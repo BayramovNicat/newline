@@ -208,6 +208,17 @@ $('.services_list > li > a').on('click',function(e){
 	e.preventDefault();
 	$(this).parent().toggleClass('active');
 	$('.white-overlay').toggle();
+
+	_this = $(this);
+	$('html').click(function(event) {
+	    //check up the tree of the click target to check whether user has clicked outside of menu
+	    if ($(event.target).attr('class')=='white-overlay') {
+	       	_this.parent().removeClass('active');
+	       	$('.white-overlay').hide();
+	        //this event listener has done its job so we can unbind it.
+	        $(this).unbind(event);
+	    }
+    });
 });
 
 
@@ -314,6 +325,7 @@ filterMarkers = function (category) {
 }
 
 $('.map-filter li').on('click', function(){
+	
 	$('.map-filter li').removeClass('active');
 	filterMarkers($(this).data('value'));
 	$(this).addClass('active');
