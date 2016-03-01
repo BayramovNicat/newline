@@ -538,7 +538,7 @@ main
 		font-size: 18px
 		margin-bottom 20px
 		color: #4a4a4a
-		
+		text-align justify
 		img
 			&.pull-left
 				margin-right: 20px
@@ -1035,6 +1035,38 @@ footer
 				top 0
 				left 15px
 				font-size 20px
+	.map-filter-mobile
+		list-style none
+		padding 0
+		position absolute
+		top 0
+		left 0
+		width 100%
+		box-shadow 0 2px 2px 0 rgba(0, 0, 0, 0.3)
+		display inline-block
+		background-color #fff
+		z-index 1
+		text-transform uppercase
+		li
+			position relative
+			height 28px
+			line-height 28px
+			padding-left 43px
+			padding-right 15px
+			display inline-block
+			margin 10px 0 10px 10px
+			color #195981
+			cursor pointer
+			font-size 14px
+			border-radius 3px
+			&.active
+				background-color #195981
+				color #fff
+			i
+				position absolute
+				top 0
+				left 15px
+				font-size 20px
 #map-canvas
 	width 100%
 	height 350px
@@ -1075,4 +1107,21 @@ footer
 		-webkit-border-radius 3px
 		-moz-border-radius 3px
 		border-radius 3px
-		
+.mini-galery
+	#galery-view,
+	#galery-scroller
+		margin 0
+#galery-scroller
+	ul
+		li
+			position relative
+			a
+				i
+					color #fff
+					position absolute
+					top 25px
+					left 0
+					font-size 40px
+					z-index 1
+					text-align center
+					width 100%

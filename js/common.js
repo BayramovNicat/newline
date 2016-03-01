@@ -324,9 +324,9 @@ filterMarkers = function (category) {
     }
 }
 
-$('.map-filter li').on('click', function(){
+$('.map-filter li, .map-filter-mobile li').on('click', function(){
 	
-	$('.map-filter li').removeClass('active');
+	$('.map-filter li, .map-filter-mobile li').removeClass('active');
 	filterMarkers($(this).data('value'));
 	$(this).addClass('active');
 });
